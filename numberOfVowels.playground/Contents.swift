@@ -5,15 +5,7 @@ func numberOfVowels(in string: String, isYAVowel: Bool = false) -> Int {
     
     for letter in string {
         switch letter {
-        case "a", "A":
-            numOfVowels += 1
-        case "e", "E":
-            numOfVowels += 1
-        case "i", "I":
-            numOfVowels += 1
-        case "o", "O":
-            numOfVowels += 1
-        case "u", "U":
+        case "a", "A", "e", "E", "i", "I", "o", "O", "u", "U":
             numOfVowels += 1
         case "y", "Y":
             if isYAVowel {
