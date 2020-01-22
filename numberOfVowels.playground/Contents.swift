@@ -7,3 +7,5 @@ func countVowels(in string: String) -> Int {
 
 }
 print (countVowels(in: "A, E, I, O, U, Y"))
+
+print(countVowels(in: "Sam"))
