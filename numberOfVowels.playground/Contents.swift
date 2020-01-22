@@ -1,5 +1,7 @@
 import UIKit
 
-func numberOfVowels(in string: String, isYAVowel: Bool = false) -> Int {
-    
+let vowels: [Character] = ["a", "e","i","o","u","y"]
+
+func numberOfVowels(in string: String, isYAVowel: Bool = true) -> Int {
+    var numberOfVowels: Int = 0 
 }
