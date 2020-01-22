@@ -1,4 +1,4 @@
-import UIKit
+
 
 var str = "Hello, playground"
 
@@ -57,8 +57,7 @@ func numberOfVowels (in string: String, isYAVowel: Bool) -> Int {
     } else {
 
         for char in string {
-
-            for char in string {
+           
 
                 switch char {
 
@@ -82,9 +81,7 @@ func numberOfVowels (in string: String, isYAVowel: Bool) -> Int {
 
                     numberOfVowels += 1
 
-                case "y":
-
-                    numberOfVowels += 1
+                
 
                 default:
 
@@ -99,24 +96,24 @@ func numberOfVowels (in string: String, isYAVowel: Bool) -> Int {
             }
 
             
-
+          
         }
 
-        
+        return numberOfVowels
 
     }
 
-    return numberOfVowels
-
-
-
-}
+    
 
 
 
 
 
-    print(numberOfVowels(in: "January", isYAVowel: true))
+
+
+
+
+    print(numberOfVowels(in: "January", isYAVowel: false))
 
 
 
