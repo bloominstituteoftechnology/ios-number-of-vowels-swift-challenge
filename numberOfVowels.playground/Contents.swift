@@ -8,11 +8,23 @@ Example: numberOfVowels(in: "Polly wants a cracker!", isYAVowel = true) // retur
 
 
 func numberOfVowels(in string: String, isYAVowel: Bool = false) -> Int {
+    var totalVowels = 0
     
-    for vowel in {
-        
+    for vowels in string {
+        switch vowels {
+        case "A", "a", "E", "e", "I", "i", "O", "o", "U", "u":
+            totalVowels += 1
+        case "y":
+            if isYAVowel == false {
+                totalVowels += 0
+            } else {
+                totalVowels += 1
+            }
+        default:
+            totalVowels += 0
+        }
     }
-    
+    return totalVowels
 }
 
 // need to loop through given string
@@ -20,3 +32,7 @@ func numberOfVowels(in string: String, isYAVowel: Bool = false) -> Int {
 //count each vowel
 //print the number
 
+numberOfVowels(in: "Kerianne Levesque", isYAVowel: false)
+
+
+numberOfVowels(in: "It is very cold in Boston during January", isYAVowel: true)
