@@ -1,11 +1,11 @@
 import UIKit
 
-let vowels: [Character] = ["a", "e","i","o","u","y"]
+var vowels: [Character] = ["a", "e","i","o","u","y"]
 
-func countVowels(in string: String) -> Int {
-    return countVowels(in: "Sam")
+func countVowels(in string: String, isYAVowel: Bool = true) -> Int {
+    return vowels.count
 
 }
-print (countVowels(in: "A, E, I, O, U, Y"))
+print (countVowels(in: "Sam", isYAVowel: true))
 
-print(countVowels(in: "Sam"))
+
