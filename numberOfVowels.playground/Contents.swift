@@ -4,10 +4,10 @@ func numberOfVowels(in string: String, isYAVowel: Bool = false) -> Int {
     var totalVowels: Int = 0
     
     for vowels in string{
-        switch vowels{
-        case "a", "e", "i", "o", "u", "A", "E", "I", "O", "U":
+        switch vowels.lowercased(){
+        case "a", "e", "i", "o", "u":
             totalVowels += 1
-        case "y", "Y":
+        case "y":
             if isYAVowel{
             totalVowels += 1
             }
@@ -22,7 +22,7 @@ func numberOfVowels(in string: String, isYAVowel: Bool = false) -> Int {
 
 
 //Should print 10
-let test = numberOfVowels(in: "a e i o u A E I O U ", isYAVowel: false)
+let test = numberOfVowels(in: "a e i o u A E I O U", isYAVowel: false)
 print(test)
 
 
