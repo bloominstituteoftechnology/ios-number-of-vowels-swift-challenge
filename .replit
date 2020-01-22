@@ -1,0 +1,2 @@
+language = "swift"
+run = "swift Contents.swift"
