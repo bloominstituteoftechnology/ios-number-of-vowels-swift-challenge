@@ -29,4 +29,4 @@ func numberOfVowels(in string: String, isYAVowel: Bool = false) -> Int {
     return vowels
 }
 
-print("There are \(numberOfVowels(in: "I aM sMeLlInG sOmEtHiNg FuNnY hErE.", isYAVowel: false)) in \(input)")
+print("There are \(numberOfVowels(in: "\"Is this where you go to have fun?\"", isYAVowel: true)) vowels in \(input)")
