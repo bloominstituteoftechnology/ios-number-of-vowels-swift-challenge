@@ -6,7 +6,7 @@ func numberOfVowels(in string: String, isYAVowel: Bool = false) -> Int {
     if isYAVowel == false {
         for letter in string {
             switch letter {
-            case "a", "e", "i", "o", "u":
+            case "a", "e", "i", "o", "u", "A", "E", "I", "O", "U":
                 vowelCount += 1
             default:
                 ()
@@ -16,7 +16,7 @@ func numberOfVowels(in string: String, isYAVowel: Bool = false) -> Int {
     } else {
         for letter in string {
             switch letter {
-            case "a", "e", "i", "o", "u", "y":
+            case "a", "e", "i", "o", "u", "y", "A", "E", "I", "O", "U", "Y":
                 vowelCount += 1
             default:
                 ()
