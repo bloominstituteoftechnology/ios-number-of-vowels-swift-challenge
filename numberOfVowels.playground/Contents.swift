@@ -8,23 +8,23 @@ func numberOfVowels(in string: String, isYAVowel: Bool = false) -> Int {
     var isY = 0
     var vowels = 0
     for lower in string {
+        switch String(lower).description {
+        case "a", "A", "e", "E", "i", "I", "o","O","u", "U":
+            vowel += 1
+        default:
+            break
+        }
         if isYAVowel {
-            switch String(lower).lowercased() {
+            switch String(lower).description {
             case "y", "Y":
                 isY += 1
             default:
                 break
             }
         }
-        switch String(lower).lowercased() {
-        case "a", "A", "e", "E", "i", "I", "o","O","u", "U":
-            vowel += 1
-        default:
-            break
-        }
     }
     vowels = vowel + isY
     return vowels
 }
 
-print("There are \(numberOfVowels(in: "\"aeioUY?\"", isYAVowel: false)) vowels in \(input)")
+print("There are \(numberOfVowels(in: "\"AeioUY?\"", isYAVowel: false)) vowels in \(input)")
