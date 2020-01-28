@@ -2,12 +2,11 @@ import UIKit
 
 func numberOfVowels(in string: String, isYAVowel: Bool = false) -> Int {
     var count: Int = 0
-    var vowels: [Character] = []
+    var vowels: [Character] = ["A", "a", "E", "e", "I", "i", "O", "o", "U", "u"]
     
     if isYAVowel {
-        vowels = ["A", "a", "E", "e", "I", "i", "O", "o", "U", "u", "Y", "y"]
-    } else {
-        vowels = ["A", "a", "E", "e", "I", "i", "O", "o", "U", "u"]
+        vowels.append("Y")
+        vowels.append("y")
     }
     
     for character in string {
