@@ -2,22 +2,22 @@ import UIKit
 
 func numberOfVowels(in string: String, isYAVowel: Bool = false) -> Int {
     
-    var vowels: [Character] = []
+    var vowelCount: Int = 0
     
     for char in string.lowercased() {
         switch char {
         case "a", "e", "i", "o", "u":
-            vowels.append(char)
+            vowelCount += 1
         case "y":
             if isYAVowel == true {
-                vowels.append(char)
+                vowelCount += 1
             }
         default:
-            break
+            vowelCount += 0
         }
     }
     
-    return vowels.count
+    return vowelCount
 }
 
 print(numberOfVowels(in: "Thank goodness it's Wednesday.", isYAVowel: true))
